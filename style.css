@@ -59,10 +59,12 @@ h2 {
 }
 
 .item-details {
-    width: 510px;
+    width: 300px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    word-wrap: break-word; /* Allows long words to break onto the next line */
+    overflow-wrap: break-word;
 }
 
 .item-heading{
@@ -94,7 +96,7 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center; 
-    width: 75.87px; 
+    width: 49.53px; 
     height: 48.4px;
     border: 1.5px solid #DEDEDE;
     border-radius: 50%;
