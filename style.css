@@ -1,22 +1,24 @@
-* {
+body, html {
     width: 600px;
     margin: auto auto;
+    font-family: Smythe;
 }
 
 header {
     position: relative;
     width: inherit;
-    height: 235px;
+    height: 200px;
 }
 
 .header-img {
-    height: 170px;
+    width: 600px;
+    height: inherit;
 }
 
 .heading {
     font-family: Smythe;
     position: absolute;
-    top: 46px;
+    top: 30px;
     left: 46px;
     color: #FFFFFF;
     font-weight: 400;
@@ -28,24 +30,32 @@ h1 {
     font-size: 49px;
     line-height: 24px;
     letter-spacing: 0%;
+    font-weight: 400;
+    margin-bottom: 0px;
 }
 
 h2 {
     width: inherit;
-    margin-top: 20px;
+    margin-top: 25px;
     font-size: 22.42px;
     line-height: 13.8px;
     letter-spacing: 0%;
+    font-weight: 400;
 }
 
 .item-container {
     width: 510px;
+    margin: auto auto;
+    margin-top: 30px;
+    height: 150px;
+    border-bottom: 1px solid #D2D2D2;
 }
 
 .item {
     display: flex;
     gap: 30px;
-    height: 150px;
+    height: 90px;
+    padding: 7px;
 }
 
 .item-details {
@@ -53,7 +63,51 @@ h2 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 150px;
+}
+
+.item-heading{
+    color: #000000;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 16.8px;
+    letter-spacing: 0%;
+}
+
+.item-ingredients {
+    color: #8B8B8B;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+}
+
+.item-price{
+    color: #000000;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0%;
+
+}
+
+.btn-container{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    width: 75.87px; 
+    height: 48.4px;
+    border: 1.5px solid #DEDEDE;
+    border-radius: 50%;
+}
+
+.increment-btn {
+    color: #3C3C3C;
+    font-family: Inter;
+    font-weight: 200;
+    font-size: 32px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: center;
 }
 
 
