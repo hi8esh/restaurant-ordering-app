@@ -67,7 +67,7 @@ h2 {
     overflow-wrap: break-word;
 }
 
-.item-heading{
+.item-name {
     color: #000000;
     font-weight: 400;
     font-size: 28px;
@@ -102,7 +102,7 @@ h2 {
     border-radius: 50%;
 }
 
-.increment-btn {
+.add-btn {
     color: #3C3C3C;
     font-family: Inter;
     font-weight: 200;
@@ -112,4 +112,101 @@ h2 {
     text-align: center;
 }
 
+.btn-container:hover {
+    cursor: pointer;
+}
 
+.orders {
+    width: 510px;
+    margin: auto auto;
+    margin-top: 30px;
+    border-bottom: 1px solid #D2D2D2;
+}
+
+.orders-container {
+    margin: 0px 30px;
+}
+
+.order-heading {
+    text-align: center;
+    font-family: Smythe;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 16.8px;
+    letter-spacing: 0%;
+    margin-bottom: 40px;
+}
+
+.order-items {
+    display: flex;
+    flex-direction: column;
+}
+
+.order-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.remove-btn {
+    font-family: Verdana;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    color: #BBBBBB;
+}
+
+.order-quantity{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 24px;
+}
+
+.quantity {
+    width: 30px;
+    padding: 4px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+    font-size: 14px;
+    box-sizing: border-box;
+    cursor: text;
+    text-align: center;
+}
+
+.quantity-btn {
+    font-family: Inter;
+    width: 26px;
+    height: 26px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.total {
+    border-top:2px solid #393333;
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.total-text {
+    font-family: Smythe;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 24px;
+    letter-spacing: 0%;
+}
+
+.total-price {
+    font-family: Smythe;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0%;
+}
