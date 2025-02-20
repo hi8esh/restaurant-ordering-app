@@ -100,6 +100,26 @@
                 </div>
             </div>
         </div>
+        <section class="checkout-card">
+            <h2>Enter card details</h2>
+            <form>
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required placeholder="Enter your full name">
+                </div>
+                <div class="form-group">
+                    <label for="cardNumber">Card Number</label>
+                    <input type="text" id="cardNumber" name="cardNumber" required placeholder="Enter your card number" maxlength="16" inputmode="numeric" pattern="[0-9]{16}" title="Card number should be 16 digits">
+                </div>
+                <div class="form-group">
+                    <label for="cvv">CVV</label>
+                    <input type="password" id="cvv" name="cvv" required placeholder="Enter CVV" maxlength="3" inputmode="numeric" pattern="[0-9]{3}" title="CVV should be 3 digits">
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Submit Payment">
+                </div>
+            </form>
+        </section>
     </main>
 </body>
 <script type="module" src="script.js"></script>
