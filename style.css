@@ -89,7 +89,6 @@ h2 {
     font-size: 20px;
     line-height: 24px;
     letter-spacing: 0%;
-
 }
 
 .btn-container{
@@ -148,6 +147,15 @@ h2 {
     margin-bottom: 10px;
 }
 
+.order-name {
+    color: #000000;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 16.8px;
+    letter-spacing: 0%;
+    flex: 1;
+}
+
 .remove-btn {
     font-family: Verdana;
     font-weight: 400;
@@ -162,6 +170,7 @@ h2 {
     align-items: center;
     gap: 10px;
     font-size: 24px;
+    flex: 1;
 }
 
 .quantity {
@@ -187,6 +196,16 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.order-price {
+    color: #000000;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    flex: 0.5;
+    text-align: right;
 }
 
 .total {
