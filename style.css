@@ -233,10 +233,11 @@ h2 {
 }
 
 .checkout-card {
+    display: block;
     width: 100%;
     max-width: 400px;
     background-color: #fff;
-    padding: 20px;
+    padding: 0px 20px 20px 20px;
     border-radius: 8px;
     box-shadow: 0px 4px 20px 60px rgba(0, 0, 0, 0.5);
     position: fixed;
@@ -246,7 +247,7 @@ h2 {
     z-index: 2;
 }
 
-h2 {
+.checkout-card h2 {
     text-align: center;
     margin-bottom: 20px;
 }
@@ -275,4 +276,14 @@ input[type="submit"] {
 }
 input[type="submit"]:hover {
     background-color: #45a049;
+}
+
+.form-close-btn{
+    color:#BBBBBB;
+    text-align: right;
+}
+
+.form-close-btn:hover{
+    color: black;
+    cursor: pointer;
 }
