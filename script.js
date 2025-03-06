@@ -25,24 +25,28 @@ document.addEventListener("click", function(e) {
     else if (e.target.id === "complete-order-btn"){
         renderCheckoutCard()
     }
-    else if (e.target.id === "submit-payment-btn"){
-        submitPayment()
-    }
+    // else if (e.target.id === "submit-payment-btn"){
+    //     submitPayment()
+    // }
 })
 
-function submitPayment() {
-    const name = document.getElementById('name').value
-    const total = getTotal()
+document.getElementById('payment-form').addEventListener('submit', function(e) {
+    e.preventDefault(); // Prevent form submission
+
+    const name = document.getElementById('name').value;
+    const total = getTotal();
 
     // Hide your orders section
-    document.getElementById('orders').style.display = 'none'
+    document.getElementById('orders').style.display = 'none';
 
     // Show the thank you message with name and total
-    document.getElementById('thank-you').style.display = 'block'
-    document.getElementById('thank-you-text').textContent = `Thanks ${name}!, Your payment of $${total} has been received. Your Order is on its way.`
+    document.getElementById('thank-you').style.display = 'block';
+    document.getElementById('thank-you-text').textContent = `Thanks ${name}!, Your payment of $${total} has been received. Your Order is on its way.`;
 
-    // reset tht form
-}
+    
+    document.getElementById('payment-form').reset();
+    document.getElementById('checkout-card').style.display = 'none';
+});
 
 function renderCheckoutCard() {
     document.getElementById('checkout-card').style.display = 'block';
