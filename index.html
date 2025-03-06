@@ -18,86 +18,20 @@
         </div>
     </header>
     <main>
-        <div class="items">
-            <div class="item-container">
-                <!-- Render Items -->
-                <div class="item">
-                    <img src="" alt="food item image">
-                    <div class="item-details">
-                        <div class="item-name">Food Heading</div>
-                        <div class="item-ingredients">ingredients</div>
-                        <div class="item-price">Food Price</div>
-                    </div>
-                    <div class="btn-container">
-                        <div id="add-btn" class="add-btn">+</div>
-                    </div>
-                </div>
-            </div>
-            <div class="item-container">
-                <!-- Render Items -->
-                <div class="item">
-                    <img src="" alt="food item image">
-                    <div class="item-details">
-                        <div class="item-name">Food Heading</div>
-                        <div class="item-ingredients">ingredients</div>
-                        <div class="item-price">Food Price</div>
-                    </div>
-                    <div class="btn-container">
-                        <div id="add-btn" class="add-btn">+</div>
-                    </div>
-                </div>
-            </div>
-            <div class="item-container">
-                <!-- Render Items -->
-                <div class="item">
-                    <img src="" alt="food item image">
-                    <div class="item-details">
-                        <div class="item-name">Food Heading</div>
-                        <div class="item-ingredients">ingredients</div>
-                        <div class="item-price">Food Price</div>
-                    </div>
-                    <div class="btn-container">
-                        <div id="add-btn" class="add-btn">+</div>
-                    </div>
-                </div>
-            </div>
+        <div class="items" id="items">
+            <!-- Render Items -->
         </div>
-        <div class="orders">
+        <div class="orders" id="orders">
             <div class="orders-container">
                 <div class="order-heading">Your order</div>
-                <div class="order-items">
-                    <div class="order-item">
-                        <div class="order-name">Pizza</div>
-                        <div class="order-quantity">
-                            <div class="quantity-btn" id="decrement-btn">-</div>
-                            <div class="quantity" aria-placeholder="0">0</div>
-                            <div class="quantity-btn" id="increment-btn">+</div>
-                        </div>
-                        <div class="order-price">$14</div>
-                    </div>
-                    <div class="order-item">
-                        <div class="order-name">Burger</div>
-                        <div class="order-quantity">
-                            <div class="quantity-btn" id="decrement-btn">-</div>
-                            <div class="quantity" aria-placeholder="0">0</div>
-                            <div class="quantity-btn" id="increment-btn">+</div>
-                        </div>
-                        <div class="order-price">$12</div>
-                    </div>
-                    <div class="order-item">
-                        <div class="order-name">Beer</div>
-                        <div class="order-quantity">
-                            <div class="quantity-btn" id="decrement-btn">-</div>
-                            <div class="quantity" aria-placeholder="0">0</div>
-                            <div class="quantity-btn" id="increment-btn">+</div>
-                        </div>
-                        <div class="order-price">$20</div>
-                    </div>
+                <div class="order-items" id="order-items">
+                    <!-- Render Ordered Items -->
                 </div>
                 <div class="total">
                     <div class="total-text">Total price:</div>
-                    <div class="total-price">$46</div>
+                    <div class="total-price" id="total-price">$46</div>
                 </div>
+                <input type="submit" value="Complete Order" id="complete-order-btn">
             </div>
         </div>
         <section class="checkout-card" id="checkout-card">
@@ -117,9 +51,14 @@
                     <input type="password" id="cvv" name="cvv" required placeholder="Enter CVV" maxlength="3" inputmode="numeric" pattern="[0-9]{3}" title="CVV should be 3 digits">
                 </div>
                 <div class="form-group">
-                    <input type="submit" value="Submit Payment">
+                    <input type="submit" value="Submit Payment" id="submit-payment-btn">
                 </div>
             </form>
+        </section>
+        <section class="thank-you" id="thank-you">
+            <div class="thank-you-message">
+                <h2 id="thank-you-text"></h2>
+            </div>
         </section>
     </main>
 </body>

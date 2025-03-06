@@ -6,6 +6,11 @@ body, html {
     /* overflow: hidden; */
 }
 
+/* Overlay Effect for the background */
+body.block-background {
+    pointer-events: none;  /* Disable all interactions with the background */
+}
+
 header {
     position: relative;
     width: inherit;
@@ -58,6 +63,17 @@ h2 {
     gap: 30px;
     height: 90px;
     padding: 7px;
+}
+
+.emoji{
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 78.72px;
+    line-height: 98.4px;
+    word-spacing: 78.72px;
+    letter-spacing: -2%;
+    text-align: center;
+    vertical-align: middle;
 }
 
 .item-details {
@@ -118,6 +134,7 @@ h2 {
 }
 
 .orders {
+    display: none;
     width: 510px;
     margin: auto auto;
     margin-top: 30px;
@@ -125,7 +142,7 @@ h2 {
 }
 
 .orders-container {
-    margin: 0px 30px;
+    margin: 0px 30px 10px 30px;
 }
 
 .order-heading {
@@ -230,10 +247,12 @@ h2 {
     font-size: 20px;
     line-height: 24px;
     letter-spacing: 0%;
+    margin-bottom: 10px;
 }
 
+
 .checkout-card {
-    display: block;
+    display: none;
     width: 100%;
     max-width: 400px;
     background-color: #fff;
@@ -245,6 +264,8 @@ h2 {
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
+    transition: opacity 0.3s ease-in-out;
+    pointer-events: auto;
 }
 
 .checkout-card h2 {
@@ -286,4 +307,26 @@ input[type="submit"]:hover {
 .form-close-btn:hover{
     color: black;
     cursor: pointer;
+}
+
+/* Thank you block styles */
+.thank-you {
+    display: none;
+    text-align: center;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #16DB99;
+    color: white;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.thank-you-message h2 {
+    font-family: Smythe;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 36px;
+    letter-spacing: 0%;
 }
